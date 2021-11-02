@@ -11,7 +11,8 @@ const App = () => {
                     교수님이 하시는거랑 제가 하는거랑 
                     한 눈에 구별할 수 있게 사각형 색을
                     빨간색으로 했습니다 </Text>
-                <Text> Hello </Text>
+                <Text> 버튼이 어느 순간부터 세로로 서있는데 이유를 잘 모르겠습니다...
+                    밑에 scrollview가 틀린거같은데 모르겠습니다... </Text>
                 <Text> Hello </Text>
                 <Text>
                     대중음악 뭐시기
@@ -51,6 +52,7 @@ const App = () => {
                         <Button title="DELETE SQUARE"/>
                     </View>
                  <View/>
+                
 
              </ScrollView>
         </>
