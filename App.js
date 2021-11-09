@@ -1,57 +1,68 @@
 import React from "react";
-import {Button, ScrollView, View , StyleSheet, Text, Image } from "react-native";
+import {Button, ScrollView, View , StyleSheet, Text, Image, onpress } from "react-native";
 import Constants from 'expo-constants';
 const App = () => {
+    const flexDirection = ['row', 'row-reverse', 'column', 'column-reverse'];
     return (
         <>
             <View style={{paddingTop: Constants.statusBarHeight}}/>
             <View style={[styles.container, styles.playingSpace]}>
             
-                <Text> 
-                    교수님이 하시는거랑 제가 하는거랑 
-                    한 눈에 구별할 수 있게 사각형 색을
-                    빨간색으로 했습니다 </Text>
-                <Text> 버튼이 어느 순간부터 세로로 서있는데 이유를 잘 모르겠습니다...
-                    밑에 scrollview가 틀린거같은데 모르겠습니다... </Text>
-                <Text> Hello </Text>
-                <Text>
-                    대중음악 뭐시기
-                    미국 뭐시기대중문화 머시기
-                    면제가 뭐시기
-                    전문연구요원 뭐시기
-                    정치권 뭐시기 점점점...
-                </Text>
-                <Image style={{
-                    width : 150,
-                    height : 150,
-                   // resizeMod: 'contain'
-                }}
-                    source={{ uri: 'http://reactnative.dev/img/tiny_logo.png',}}/>
+                
 
             </View>
             <ScrollView style={[styles.container]}>
          <View style={[styles.buttonView]}>
-                        <Button title="CHANGE FLEX DIRECTION"/>
+                        <Button title="CHANGE FLEX DIRECTION"
+                            onPress={() =>
+                                console.log("press CHANGE FLEX DIRECTION")
+                            }
+                        />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="CHANGE JUSTIFY CONTENT"/>
+                        <Button title="CHANGE JUSTIFY CONTENT"
+                        onPress={() =>
+                            console.log("press CHANGE JUSTIFY CONTENT")
+                        }
+                        />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="CHANGE ALIGN ITEMS"/>
+                        <Button title="CHANGE ALIGN ITEMS"
+                        onPress={() =>
+                            console.log("press CHANGE ALIGN ITEMS")
+                        }
+                        />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="CHANGE DIRECTION"/>
+                        <Button title="CHANGE DIRECTION"
+                        onPress={() =>
+                            console.log("press CHANGE DIRECTION")
+                        }
+                        />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="CHANGE FLEX WRAP"/>
+                        <Button title="CHANGE FLEX WRAP"
+                        onPress={() =>
+                            console.log("press CHANGE FLEX WRAP")
+                        }
+                        />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="ADD SQUARE"/>
+                        <Button title="ADD SQUARE"
+                        onPress={() =>
+                            console.log("press ADD SQUARE")
+                        }
+                        />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="DELETE SQUARE"/>
+                        <Button title="DELETE SQUARE"
+                        onPress={() =>
+                            console.log("press DELETE SQUARE")
+                        }
+                        />
                     </View>
-                 <View/>
+
+             <View/>
                 
 
              </ScrollView>
