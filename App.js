@@ -13,19 +13,20 @@ const App = () => {
     ];
     const alignItems = ['stretch', 'flex-start', 'flex-end', 'center', 'baseline'];
     const flexWraps = ['wrap', 'nowrap'];
-    const changeDirections = ['?']
-
+    const directions = ['ltr', 'rtl']
+    
     const [flexDirectionIndex, setflexDirection] = useState(0);
     const [justifyContentIndex, setJustifyContent] = useState(0);
     const [alignItemsIndex, setalignItem] = useState(0);
     const [flexWrapIndex, setflexWrap] = useState(0);
-    const [changeDirectionsIndex, setchangeDirect] = useState(0);
+    const [directionIndex, setdirection] = useState(0);
+
     const hookedStyles = {
         flexDirection:flexDirections[flexDirectionIndex],
         justifyContent:justifyContents[justifyContentIndex],
         alignItem:alignItems[alignItemsIndex],
         flexWrap:flexWraps[flexWrapIndex],
-        changeDirection:changeDirections[changeDirectionsIndex],
+        direction:directions[directionIndex],
     }
 
     const changeSetting = (value, options, setterfunction) => {
@@ -46,8 +47,8 @@ const App = () => {
         return <View style={sqStyle} />
     };
 
-    const[squares, setSquares] = useState([Square(),Square(),Square()]);
-
+    const[squares, setSquares] = useState([Square(),Square(),Square(),Square(),Square(),Square(),Square(),Square(),Square()]);
+  
     
     return (
         <>
@@ -89,7 +90,7 @@ const App = () => {
                         <Button title="CHANGE DIRECTION"
                         onPress={() => {
                             console.log("press CHANGE DIRECTION")
-                            changeSetting(changeDirectionsIndex, changeDirections, setchangeDirect);    
+                            changeSetting(directionIndex, directions, setdirection);    
                         }
                     }
                         />
@@ -105,16 +106,21 @@ const App = () => {
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="ADD SQUARE"
-                        onPress={() =>
+                        onPress={() => {
                             console.log("press ADD SQUARE")
+                            setSquares([...squares, Square()])
+                        }
+
                         }
                         />
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="DELETE SQUARE"
-                        onPress={() =>
+                        onPress={() => {
                             console.log("press DELETE SQUARE")
+                            setSquares(squares.filter((v,i) => i != squares.length -1));
                         }
+                    }
                         />
                     </View>
 
