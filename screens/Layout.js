@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Button, ScrollView, View , StyleSheet, Text, Image} from "react-native";
+import {Button, ScrollView, View , StyleSheet, Text, Image, } from "react-native";
 import Constants from 'expo-constants';
 import { NavigationContainer } from "@react-navigation/native";
 const Layout = (props) => {
@@ -69,6 +69,7 @@ const Layout = (props) => {
                             }
                         }
                         />
+                        <Text style={[styles.text]}>row</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE JUSTIFY CONTENT"
@@ -78,6 +79,7 @@ const Layout = (props) => {
                                 }
                             }
                         />
+                        <Text style={[styles.text]}>center</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE ALIGN ITEMS"
@@ -87,6 +89,7 @@ const Layout = (props) => {
                             }
                         }
                         />
+                        <Text style={[styles.text]}>flex-end</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE DIRECTION"
@@ -96,6 +99,7 @@ const Layout = (props) => {
                         }
                     }
                         />
+                        <Text style={[styles.text]}>rtl</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE FLEX WRAP"
@@ -105,6 +109,7 @@ const Layout = (props) => {
                         }
                     }
                         />
+                        <Text style={[styles.text]}>wrap</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="ADD SQUARE"
@@ -164,7 +169,10 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
     },
-    
+    text:{
+        fontSize: 20,
+        textAlign: 'center'
+    }
 
     
 })

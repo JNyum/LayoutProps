@@ -20,10 +20,6 @@ function Home({navigation}) {
                 <Text style={styles.buttonText}>"Go To Layout" </Text>
             </TouchableOpacity>
 
-            <Button
-                title="GO TO Homework"
-                onPress={()=>navigation.navigate('Homework')}
-            />
             </View>
         </>
     );

@@ -10,18 +10,12 @@ function MainTabNavigator() {
     return(
         <NavigationContainer>
             <Nav.Navigator
-                initialRouteName='Homework'
+                initialRouteName='Home'
             >
                 <Nav.Screen
                     name = "Home"
                     component={Home}
                     options={{title:'Home Screen'}}
-                />
-
-                <Nav.Screen
-                    name = "Homework"
-                    component={Homework}
-                    options={{title:'Homework Screen'}}
                 />
 
                 <Nav.Screen
