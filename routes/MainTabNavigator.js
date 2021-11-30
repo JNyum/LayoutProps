@@ -1,14 +1,12 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
-import Layout from '../screens/Layout';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
-import Homework from '../screens/Homework';
+import Layout from '../screens/Layout';
 
-const Nav = createStackNavigator();
+const Nav = createBottomTabNavigator();
 
-function MainStackNavigator() {
+function MainTabNavigator() {
     return(
         <NavigationContainer>
             <Nav.Navigator
@@ -39,4 +37,4 @@ function MainStackNavigator() {
 
 }
 
-export default MainStackNavigator;
+export default MainTabNavigator;

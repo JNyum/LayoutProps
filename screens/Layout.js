@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import {Button, ScrollView, View , StyleSheet, Text, Image} from "react-native";
 import Constants from 'expo-constants';
-const Layout = () => {
+import { NavigationContainer } from "@react-navigation/native";
+const Layout = (props) => {
+    const {navigation} = props;
     const flexDirections = ['row', 'row-reverse', 'column', 'column-reverse'];
     const justifyContents = [
         'flex-start',
@@ -121,6 +123,15 @@ const Layout = () => {
                             setSquares(squares.filter((v,i) => i != squares.length -1));
                         }
                     }
+                        />
+                    </View>
+                    <View style={[styles.buttonView]}>
+                        <Button title="GO TO HOME"
+                            onPress={() => {
+                                console.log("GO TO HOME");
+                                navigation.navigate('Home')
+                                }
+                            }
                         />
                     </View>
 
