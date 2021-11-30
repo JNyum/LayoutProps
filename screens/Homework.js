@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Button, StyleSheet } from "react-native";
+import { Text, Button, StyleSheet,  } from "react-native";
 
 function Homework({navigation}) {
     return(
@@ -9,6 +9,8 @@ function Homework({navigation}) {
                 title="GO TO Home"
                 onPress={()=>navigation.navigate('Home')}
             />
+
+
             <Button
                 title="GO TO LAYOUT"
                 onPress={()=>navigation.navigate('Layout') }
@@ -16,6 +18,5 @@ function Homework({navigation}) {
         </>
     );
 }
-
 
 export default Homework;
