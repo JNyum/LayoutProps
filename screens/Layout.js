@@ -69,7 +69,7 @@ const Layout = (props) => {
                             }
                         }
                         />
-                        <Text style={[styles.text]}>row</Text>
+                        <Text style={[styles.text]}>{hookedStyles.flexDirection}</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE JUSTIFY CONTENT"
@@ -79,7 +79,7 @@ const Layout = (props) => {
                                 }
                             }
                         />
-                        <Text style={[styles.text]}>center</Text>
+                        <Text style={[styles.text]}>{hookedStyles.justifyContent}</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE ALIGN ITEMS"
@@ -89,17 +89,18 @@ const Layout = (props) => {
                             }
                         }
                         />
-                        <Text style={[styles.text]}>flex-end</Text>
+                        <Text style={[styles.text]}>{hookedStyles.alignItem}</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE DIRECTION"
                         onPress={() => {
                             console.log("press CHANGE DIRECTION")
                             changeSetting(directionIndex, directions, setdirection);    
+                            
                         }
                     }
                         />
-                        <Text style={[styles.text]}>rtl</Text>
+                        
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE FLEX WRAP"
@@ -109,7 +110,7 @@ const Layout = (props) => {
                         }
                     }
                         />
-                        <Text style={[styles.text]}>wrap</Text>
+                        <Text style={[styles.text]}>{hookedStyles.flexWrap}</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="ADD SQUARE"
@@ -170,6 +171,7 @@ const styles = StyleSheet.create({
         height: 100,
     },
     text:{
+        
         fontSize: 20,
         textAlign: 'center'
     }
