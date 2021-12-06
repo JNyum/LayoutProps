@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
 import Layout from '../screens/Layout';
 import Homework from '../screens/Homework';
-
+import Weather from '../screens/Weather';
 const Nav = createBottomTabNavigator();
 
 function MainTabNavigator() {
@@ -29,6 +29,12 @@ function MainTabNavigator() {
                     name = "Layout"
                     component={Layout}
                     options={{title:'Layout Screen'}}
+                />
+
+                <Nav.Screen
+                    name = "Weather"
+                    component={Weather}
+                    options={{title:'Weather Screen'}}
                 />
 
             </Nav.Navigator>

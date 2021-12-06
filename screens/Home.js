@@ -27,6 +27,13 @@ function Home({navigation}) {
                 <Text style={styles.buttonText}>"Go To Homework" </Text>
             </TouchableOpacity>
             
+            <TouchableOpacity
+                style={styles.buttonContainer}
+                onPress={()=>navigation.navigate('Weather') }
+                >
+                <Text style={styles.buttonText}>"Go To Weather" </Text>
+            </TouchableOpacity>
+
             </View>
         </>
     );

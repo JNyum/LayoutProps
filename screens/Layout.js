@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {Button, ScrollView, View , StyleSheet, Text, Image, } from "react-native";
 import Constants from 'expo-constants';
 import { NavigationContainer } from "@react-navigation/native";
+
 const Layout = (props) => {
     const {navigation} = props;
     const flexDirections = ['row', 'row-reverse', 'column', 'column-reverse'];
@@ -132,10 +133,28 @@ const Layout = (props) => {
                         />
                     </View>
                     <View style={[styles.buttonView]}>
-                        <Button title="GO TO HOME"
+                        <Button title="GO TO Home"
                             onPress={() => {
-                                console.log("GO TO HOME");
+                                console.log("GO TO Home");
                                 navigation.navigate('Home')
+                                }
+                            }
+                        />
+                    </View>                    
+                    <View style={[styles.buttonView]}>
+                        <Button title="GO TO Homework"
+                            onPress={() => {
+                                console.log("GO TO Homework");
+                                navigation.navigate('Homework')
+                                }
+                            }
+                        />
+                    </View>
+                    <View style={[styles.buttonView]}>
+                        <Button title="GO TO Weather"
+                            onPress={() => {
+                                console.log("GO TO Weather");
+                                navigation.navigate('Weather')
                                 }
                             }
                         />
