@@ -5,6 +5,7 @@ import Home from '../screens/Home';
 import Layout from '../screens/Layout';
 import Homework from '../screens/Homework';
 import Weather from '../screens/Weather';
+import Map from '../screens/Map';
 const Nav = createBottomTabNavigator();
 
 function MainTabNavigator() {
@@ -35,6 +36,12 @@ function MainTabNavigator() {
                     name = "Weather"
                     component={Weather}
                     options={{title:'Weather Screen'}}
+                />
+
+                <Nav.Screen
+                    name = "Map"
+                    component={Map}
+                    options={{title:'Map Screen'}}
                 />
 
             </Nav.Navigator>

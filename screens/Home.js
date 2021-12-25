@@ -34,6 +34,13 @@ function Home({navigation}) {
                 <Text style={styles.buttonText}>"Go To Weather" </Text>
             </TouchableOpacity>
 
+            <TouchableOpacity
+                style={styles.buttonContainer}
+                onPress={()=>navigation.navigate('Map') }
+                >
+                <Text style={styles.buttonText}>"Go To Map" </Text>
+            </TouchableOpacity>
+
             </View>
         </>
     );
@@ -43,8 +50,8 @@ const styles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: 'black',
         borderRadius: 5,
-        padding:10,
-        margin:20
+        padding:5,
+        margin:10
     },
     buttonText: {
         fontSize:20,

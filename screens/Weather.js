@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, Alert, StyleSheet, View, Image} from 'react-native';
+import {Text, Alert, StyleSheet, View, } from 'react-native';
 import * as Location from 'expo-location';
 import Axios from 'axios';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
