@@ -101,7 +101,7 @@ const Layout = (props) => {
                         }
                     }
                         />
-                        
+                        <Text style={[styles.text]}>{hookedStyles.direction}</Text>
                     </View>
                     <View style={[styles.buttonView]}>
                         <Button title="CHANGE FLEX WRAP"

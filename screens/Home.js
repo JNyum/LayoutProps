@@ -10,7 +10,7 @@ function Home({navigation}) {
 
             <Image
                 source={require('../assets/frog.jpg')}
-                style={{height:400,width:400}}
+                style={{height:200,width:200}}
             />
             
             <TouchableOpacity

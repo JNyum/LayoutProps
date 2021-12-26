@@ -28,10 +28,8 @@ const GoogleMap = () => {
     <Container>
       <MapView style={{flex: 1}}
         provider={PROVIDER_GOOGLE} 
-        initialRegion={{
-            latitude: 37.3338882,
-            longitude: 127.25508,
-        }}
+        showsUserLocation={true}
+        showsMyLocationButton={true}
         />
     </Container>
   );
