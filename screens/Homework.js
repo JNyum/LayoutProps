@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { Text, Button, StyleSheet } from "react-native";
 
 function Homework({navigation}) {
@@ -18,4 +18,4 @@ function Homework({navigation}) {
 }
 
 
-export default Homework;
+export default Homework;*/

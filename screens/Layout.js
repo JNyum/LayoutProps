@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import {Button, ScrollView, View , StyleSheet, Text, Image} from "react-native";
 import Constants from 'expo-constants';
 import { NavigationContainer } from "@react-navigation/native";
@@ -177,4 +177,4 @@ const randomHexColor = () => {
 
 
 
-export default Layout;
+export default Layout;*/

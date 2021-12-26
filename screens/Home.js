@@ -1,4 +1,4 @@
-import { NavigationContainer } from "@react-navigation/native";
+/*import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { Text, Button, Image, TouchableOpacity, StyleSheet, View} from "react-native";
 
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
 
 
 
-export default Home;
+export default Home;*/
